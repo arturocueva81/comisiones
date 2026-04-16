@@ -11,17 +11,10 @@ function calcularComision(numeroVentas, precioProducto) {
 }
 
 function calcular(){
-    let componenteSueldoBase = document.getElementById("txtSueldoBase");
-    let componenteVentas = document.getElementById("txtVentas");
-    let componentePrecio= document.getElementById("txtPrecio");
 
-    let sueldoBaseStr= componenteSueldoBase.value;
-    let ventasStr= componenteVentas.value;
-    let precioStr= componentePrecio.value;
-
-    let sueldoBase = parseFloat(sueldoBaseStr);
-    let numeroVentas = parseInt(ventasStr);
-    let precioProducto = parseFloat(precioStr);
+    let sueldoBase = recuperarFloat("txtSueldoBase");
+    let numeroVentas = recuperarFloat("txtVentas");
+    let precioProducto = recuperarFloat("txtPrecio");
 
     let comision = calcularComision(numeroVentas, precioProducto);
     let sueldoTotal = sueldoBase + comision;
