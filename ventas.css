@@ -19,6 +19,8 @@ body {
     padding: 20px;
 
     color: #e2e8f0;
+
+    align-items: flex-start;
 }
 
 /* CONTENEDOR - Glassmorphism */
@@ -81,7 +83,7 @@ input {
     background-color: rgba(255, 255, 255, 0.1);
     color: #f1f5f9;
 
-    font-size: 0.95rem;
+    font-size: 16px;
 
     transition: all 0.25s ease;
 }
@@ -113,6 +115,8 @@ button {
 
     cursor: pointer;
     transition: all 0.25s ease;
+
+     min-height: 48px;
 }
 
 button:hover {
@@ -145,27 +149,53 @@ span {
 /* RESPONSIVE */
 @media (max-width: 480px) {
 
+    body {
+        padding: 10px;
+    }
+
     .contenedor {
-        padding: 22px;
+        width: 100%;
+        max-width: 100%;
+        padding: 18px;
         border-radius: 14px;
     }
 
     h1 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        text-align: center;
     }
 
     h2 {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
+    }
+
+    label {
+        font-size: 0.8rem;
     }
 
     input {
-        padding: 11px;
-        font-size: 0.9rem;
+        padding: 12px;
+        font-size: 1rem; /* mejor para touch */
     }
 
     button {
-        padding: 12px;
-        font-size: 0.95rem;
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    span {
+        align-self: flex-end;
+    }
+
+    small {
+        font-size: 0.75rem;
     }
 }
 
