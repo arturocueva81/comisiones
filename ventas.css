@@ -168,3 +168,25 @@ span {
         font-size: 0.95rem;
     }
 }
+
+small {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 12px;
+
+    color: #ef4444; /* rojo */
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/* Chrome, Edge, Safari */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
